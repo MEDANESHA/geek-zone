@@ -1,0 +1,26 @@
+{
+  "name": "geekzone",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "devserver": "live-server http://localhost:82/geekzone",
+    "watch:sass": " node-sass sass/main.scss css/style.css -w",
+    "start": "npm-run-all --parallel devserver watch:sass"
+  },
+  "author": "Mouhamed",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "node-sass": "^4.5.3",
+    "live-server": "^1.2.1",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1"
+  },
+  "dependencies": {
+    "mysql": "^2.18.1"
+  },
+  "keywords": [],
+  "description": ""
+}
